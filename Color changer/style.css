@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 50%;
+}
+div{
+    width: 200px;
+    height: 200px;
+}
+.box{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
