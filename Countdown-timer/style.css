@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+main{
+    max-width: 50%;
+    margin: 0 auto;
+    text-align:center;
+}
+h1{
+    font-size: 4em;
+    color: #F2801B;
+    padding: 50px;
+}
+.countdown-container{
+    display: flex;
+    justify-content: space-around;
+}
+.countdown-item{
+    background: #8C2B0A;
+    padding: 30px;
+    border-radius: 5px;
+}
+h2{
+    color: #F5F2E4;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+h3{
+    color: #F09C51;
+    font-weight: 300;
+}
