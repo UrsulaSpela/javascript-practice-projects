@@ -6,6 +6,7 @@ let workMinutes = document.querySelector('#work_minutes')
 let workSeconds = document.querySelector('#work_seconds')
 let breakMinutes = document.querySelector('#break_minutes')
 let breakSeconds = document.querySelector('#break_seconds')
+let cycles = document.querySelector('#cycles')
 
 function timer(){
     if(workSeconds.textContent != 0){
@@ -22,7 +23,6 @@ function timer(){
         breakSeconds.textContent = 59
     }
 
-    let cycles = document.querySelector('#cycles')
     if(workMinutes.textContent == 0 && workSeconds.textContent == 0 && breakMinutes.textContent == 0 && breakSeconds.textContent == 0){
         cycles++;
         workMinutes.textContent = 25
@@ -38,4 +38,22 @@ start.addEventListener('click', function(){
     }else{
         alert ('Timer is already running!')
     }
+})
+
+function stopInterval(){
+    clearInterval(startTimer);
+}
+
+restart.addEventListener('click', function(){
+        workMinutes.textContent = 25
+        workSeconds.textContent = '00'
+        breakMinutes.textContent = 5
+        breakSeconds.textContent = '00'
+        cycles.textContent = 0
+        stopInterval()
+        startTimer = undefined;
+})
+pause.addEventListener('click', function(){
+    stopInterval()
+    startTimer = undefined;
 })
