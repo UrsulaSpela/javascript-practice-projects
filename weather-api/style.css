@@ -12,3 +12,9 @@ main {
   margin: 0 auto;
   background: linear-gradient(white, gray);
 }
+.weather-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
